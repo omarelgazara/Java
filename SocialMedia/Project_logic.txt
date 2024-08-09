@@ -1,0 +1,22 @@
+
+ social media sush as facebook
+ -----------------------------------------------------
+step 1:
+         user( id ,fullName,email,phone ,password , role ,List<post>),List(like) ,List(comment);
+         role (id ,name)POLE_USER ,ROLE_ADMIN ,ROLE_MANAGER;
+         role relation admin ,mangers and  users
+
+ ------------------------------------------------------
+ step 2:  post - like - comment
+
+           post ( id ,content ,image,video , user, List(like), List(comment) )
+           like (id,post,user)
+           comment (id , text ,image ,video ,post,user)
+
+ ------------------------------------------------------
+ step 3:
+
+ user  many-to-many friends
+         friend (id ,name,list<user>)
+         chat  (id,name, user,list<Message>)
+         message(id ,text,user,chat)
